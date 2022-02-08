@@ -41,6 +41,11 @@
     <!-- Template Main CSS File -->
     <link href="/public/css/style.css" rel="stylesheet" />
 
+    <script
+      src="https://kit.fontawesome.com/5bb93003c2.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- =======================================================
   * Template Name: iPortfolio - v3.7.0
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -54,16 +59,82 @@
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
     <!-- ======= Header ======= -->
-    <%- include('components/header') %> 
-    <!-- End Header -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <img
+            src="/public/img/profile-img-cropped.png"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
+          <h1 class="text-light"><a href="/index.ejs">Haluesst Scharif</a></h1>
+          <div class="social-links mt-3 text-center">
+            <a
+              href="https://www.xing.com/profile/Haluesst_Scharif"
+              target="_blank"
+              class="xing"
+              ><i class="fab fa-xing"></i
+            ></a>
+            <a href="https://github.com/Scharif47" target="_blank" class="github"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/haluesst-scharif-2a2617230/"
+              class="linkedin"
+              target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </div>
     
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li>
+              <a href="/" class="nav-link scrollto active"
+                ><i class="bx bx-home"></i> <span>Home</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    
+    <!-- End Header -->
+
     <div id="main">
-      <h1><%= data.title %></h1>
+      <section id="project" class="project">
+        <div class="container">
+          <div class="section-title">
+            <h1><%= data.title %></h1>
+            <p><%= data.description %></p>
+          </div>
+
+          <div class="section-description mb-5">
+            <h3>Verwendete Tools:</h3>
+            <p><%= data.tools %></p>
+            <hr />
+            <div class="demo mb-4">
+              <p><strong>Live-Demo:</strong></p>
+              <a href="<%= data.demo %>"><%= data.demo %></a>
+            </div>
+
+            <div class="github">
+              <p><strong>Github:</strong></p>
+              <a href="<%= data.github %>"><%= data.github %></a>
+            </div>
+           
+          </div>
+
+          <div class="row no-gutters">
+            <img src="<%= data.image %>" alt="<%= data.title %>" />
+          </div>
+        </div>
+      </section>
     </div>
 
-
     <!-- ======= Footer ======= -->
-    <%- include("components/footer") %> 
+    <%- include("components/footer") %>
     <!-- End  Footer -->
 
     <a

@@ -1,30 +1,56 @@
 [
   {
     "id": 0,
-    "title": "crypto",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, corrupti ullam voluptas molestiae voluptatem necessitatibus iure et qui explicabo aperiam laudantium repudiandae numquam alias voluptate dignissimos excepturi placeat a illum?",
-    "github": "https://github.com",
-    "image": "/public/img/portfolio/portfolio-1.jpg"
+    "title": "CryptoCoin",
+    "description": "Kryptowährungs Webseite, die anhand der CoinGecko API Echtzeitdaten ermöglicht.",
+    "tools": "React, React-Router-Dom- 6, React-Redux, Middleware, TailwindCSS, Styled-Component, DaisyUI, HeroIcons, Axios, CoinGecko API, ChartJS, React-ChartJS-2",
+    "github": "https://github.com/Scharif47/CryptoCoin",
+    "demo": "https://scharif47.github.io/CryptoCoin/",
+    "image": "/public/img/portfolio/crypto-1.png"
   },
   {
     "id": 1,
-    "title": "project2",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, corrupti ullam voluptas molestiae voluptatem necessitatibus iure et qui explicabo aperiam laudantium repudiandae numquam alias voluptate dignissimos excepturi placeat a illum?",
-    "github": "https://github.com",
-    "image": "/public/img/portfolio/portfolio-2.jpg"
+    "title": "Covid-Tracker",
+    "description": "Covid-Live-Tracker App, die Echtzeitdaten von der disease.sh API bezieht.",
+    "tools": "React, ChartJS, React- ChartJS, Material-UI, React-Leaflet, Disease.sh API",
+    "github": "https://github.com/Scharif47/Covid-Tracker",
+    "demo": "https://scharif47.github.io/Covid-Tracker/",
+    "image": "/public/img/portfolio/covid-tracker-1.png"
   },
   {
     "id": 2,
-    "title": "project3",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, corrupti ullam voluptas molestiae voluptatem necessitatibus iure et qui explicabo aperiam laudantium repudiandae numquam alias voluptate dignissimos excepturi placeat a illum?",
-    "github": "https://github.com",
-    "image": "/public/img/portfolio/portfolio-3.jpg"
+    "title": "FashionArts",
+    "description": "Fashion Webseite für Events & Merchandise",
+    "tools": "HTML, CSS, Figma, Draw.io, Font Awesome, Google Fonts",
+    "github": "https://github.com/Scharif47/FashionArts",
+    "demo": "https://scharif47.github.io/FashionArts/",
+    "image": "/public/img/portfolio/fashions-1.png"
   },
   {
     "id": 3,
-    "title": "project4",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, corrupti ullam voluptas molestiae voluptatem necessitatibus iure et qui explicabo aperiam laudantium repudiandae numquam alias voluptate dignissimos excepturi placeat a illum?",
-    "github": "https://github.com",
-    "image": "/public/img/portfolio/portfolio-4.jpg"
+    "title": "FlashCards",
+    "description": "Eine Flash Karten App, die beim Lernen neuen Vokabeln hilft. Die Website ist eine Single Page Application (SPA).",
+    "tools": "React, TailwindCSS, React-Router-6",
+    "github": "https://github.com/Scharif47/FlashCards",
+    "demo": "https://flash-cards-one.vercel.app/",
+    "image": "/public/img/portfolio/flashcards-1.png"
+  },
+  {
+    "id": 4,
+    "title": "TechGym",
+    "description": "TechGym Fitness Website.",
+    "tools": "HTML, SASS, Git",
+    "github": "https://github.com/Scharif47/TechsG",
+    "demo": "https://scharif47.github.io/TechsG/",
+    "image": "/public/img/portfolio/techgym-1.png"
+  },
+  {
+    "id": 5,
+    "title": "Todo-App",
+    "description": "Eine todo App, die beim Erinnern von Aufgaben helfen soll.",
+    "tools": "React, TailwindCSS, Git",
+    "github": "https://github.com/Scharif47/Todo-App",
+    "demo": "https://todo-app-pi-self.vercel.app/",
+    "image": "/public/img/portfolio/todo-2.png"
   }
 ]
