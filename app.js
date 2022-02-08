@@ -28,6 +28,10 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 app.use("/", index);
 app.use("/projects", project);
 
+// download CV
+app.get("/download", (req, res) => {
+  res.sendFile(path.join(__dirname, "./data/CV_Haluesst_Scharif.pdf"));
+});
 
 // Set server listener
 app.listen(app.get("port"), () => {
