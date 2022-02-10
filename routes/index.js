@@ -18,6 +18,15 @@ router.get("/", (req, res) => {
   });
 });
 
+router.get(
+  "/.well-known/acme-challenge/aOWctIm1pBNayelm7VaRPxdtf-ZcYCWxxwRhEvsC-qg",
+  (req, res) => {
+    res.send(
+      "aOWctIm1pBNayelm7VaRPxdtf-ZcYCWxxwRhEvsC-qg.AGNhHyx1ee94a74oe9kEeWMjwPReQUayN9tzh-iUfGI"
+    );
+  }
+);
+
 router.post("/", (req, res, next) => {
   console.log(req.body);
   var verificationUrl =
@@ -39,7 +48,9 @@ router.post("/", (req, res, next) => {
     } else {
       sendEmail(req.body)
         .then(() => {
-          res.render("success", {success: { message: "Vielen Dank für Ihre Nachricht" }});
+          res.render("success", {
+            success: { message: "Vielen Dank für Ihre Nachricht" },
+          });
         })
         .catch((error) => {
           res.render("error", { error: error });
