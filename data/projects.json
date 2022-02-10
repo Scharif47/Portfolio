@@ -19,12 +19,12 @@
   },
   {
     "id": 2,
-    "title": "FashionArts",
-    "description": "Fashion Webseite für Events & Merchandise",
-    "tools": "HTML, CSS, Figma, Draw.io, Font Awesome, Google Fonts",
+    "title": "Barber-Pro",
+    "description": "Barber Shop Webseite, die mit der neuen SASS version und Parcel erstellt wurde.",
+    "tools": "HTML, SASS, Adobe xd, Draw.io, Font Awesome, Google Fonts",
     "github": "https://github.com/Scharif47/FashionArts",
     "demo": "https://scharif47.github.io/FashionArts/",
-    "image": "/public/img/portfolio/fashions-1.png"
+    "image": "/public/img/portfolio/barber-pro-1.png"
   },
   {
     "id": 3,

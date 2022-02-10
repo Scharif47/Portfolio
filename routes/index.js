@@ -37,7 +37,7 @@ router.get(
 );
 
 router.post("/", (req, res, next) => {
-  console.log(req.body);
+  // console.log(req.body);
   var verificationUrl =
     "https://www.google.com/recaptcha/api/siteverify?secret=" +
     process.env.RECAPTCHA_KEY +
@@ -52,13 +52,19 @@ router.post("/", (req, res, next) => {
     // Success will be true or false depending upon captcha validation.
     if (body.success !== undefined && !body.success) {
       res.render("error", {
-        error: { message: "Es wurde kein menschliches Leben gefunden" },
+        error: {
+          title: "Fehler",
+          message: "Verifizierung fehlgeschlagen",
+        },
       });
     } else {
       sendEmail(req.body)
         .then(() => {
           res.render("success", {
-            success: { message: "Vielen Dank für Ihre Nachricht" },
+            success: {
+              title: "Nachricht gesendet",
+              message: "Vielen Dank für Ihre Nachricht",
+            },
           });
         })
         .catch((error) => {
@@ -66,14 +72,6 @@ router.post("/", (req, res, next) => {
         });
     }
   });
-
-  // sendEmail(req.body)
-  //   .then(() => {
-  //     res.redirect("/");
-  //   })
-  //   .catch((error) => {
-  //     res.render("error", { error: error });
-  //   });
 });
 
 module.exports = router;

@@ -53,56 +53,32 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   </head>
+  
   <body>
     <!-- Header -->
-    <header id="header">
-      <div class="d-flex flex-column">
-        <div class="profile">
-          <img
-            src="/public/img/profile-img-cropped.png"
-            alt=""
-            class="img-fluid rounded-circle"
-          />
-          <h1 class="text-light"><a href="/index.ejs">Haluesst Scharif</a></h1>
-          <div class="social-links mt-3 text-center">
-            <a
-              href="https://www.xing.com/profile/Haluesst_Scharif"
-              target="_blank"
-              class="xing"
-              ><i class="fab fa-xing"></i
-            ></a>
-            <a
-              href="https://github.com/Scharif47"
-              target="_blank"
-              class="github"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/haluesst-scharif-2a2617230/"
-              class="linkedin"
-              target="_blank"
-              ><i class="bx bxl-linkedin"></i
-            ></a>
-          </div>
-        </div>
-
-        <nav id="navbar" class="nav-menu navbar">
-          <ul>
-            <li>
-              <a href="/" class="nav-link scrollto active"
-                ><i class="bx bx-home"></i> <span>Home</span></a
-              >
-            </li>
-          </ul>
-        </nav>
-        <!-- .nav-menu -->
-      </div>
-    </header>
+    <%- include("components/header") %>
 
     <!-- Error -->
-    <%= error.message %>
+
+    <main id="main">
+      <section id="error" class="error">
+        <div class="container text-center ">
+          <h2><%= error.title %></h2>
+          <br>
+          <hr>
+          <p><%= error.message %></p>
+          <br>
+          <p>
+            Zurück zu <a href="/">Home</a>
+          </p>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <%-include("components/footer") %>
+    <div class="position-absolute bottom-0 w-100">
+      <%-include("components/footer") %>
+    </div>
+   
   </body>
 </html>
