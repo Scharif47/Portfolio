@@ -27,6 +27,15 @@ router.get(
   }
 );
 
+router.get(
+  "/.well-known/acme-challenge/UsKuKzbWo_iqbsK6PdLEsVxDx4goTgR57f0dLExHqqo",
+  (req, res) => {
+    res.send(
+      "UsKuKzbWo_iqbsK6PdLEsVxDx4goTgR57f0dLExHqqo.AGNhHyx1ee94a74oe9kEeWMjwPReQUayN9tzh-iUfGI"
+    );
+  }
+);
+
 router.post("/", (req, res, next) => {
   console.log(req.body);
   var verificationUrl =
