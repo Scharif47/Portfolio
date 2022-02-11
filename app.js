@@ -30,7 +30,7 @@ app.use("/projects", project);
 
 // download CV
 app.get("/download", (req, res) => {
-  res.sendFile(path.join(__dirname, "./data/CV_Haluesst_Scharif.pdf"));
+  res.sendFile(path.join(__dirname, "./data/CV_Haluesst-Scharif.pdf"));
 });
 
 // Set server listener
